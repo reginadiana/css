@@ -1,4 +1,4 @@
-# FlexBog
+# FlexBlog
 A simple single page to consolidate flexbox css concepts learned in [origamid flexbox css course](https://www.origamid.com/curso/css-flexbox/)
 
 ## Deploy
