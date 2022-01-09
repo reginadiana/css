@@ -1,5 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+
+body {
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+/* Normalize */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Cria as imagens de forma responsiva 
+mantendo seu tamanho original quando a 
+largura da tela permitir isso */
+img {
+  display: block;
+  max-width: 100%;
+}
 
 * {
-  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
 }
