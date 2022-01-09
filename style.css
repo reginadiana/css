@@ -3,14 +3,14 @@
 :root {
   /* Blue */
   --light-blue: #66d9eb;
-  --blue: #2c70ff;
+  --blue: #142b73;
   --dark-blue: #122ab2;
 
   /* Gray */
   --light-gray: #f7f7f7;
-  --gray: #a4a4a4;
-  --medium-gray: #7c7c7c;
-  --dark-gray: #777;
+  --gray: #3f5d63;
+  --medium-gray: #3c4d5e;
+  --dark-gray: #3c4d5e;
 
   /* Others */
   --white: #fff;
@@ -116,7 +116,7 @@ img {
 }
 
 .menu-nav a:hover {
-  color: var(--dark-blue);
+  color: orange;
 }
 
 /* Introdução */
@@ -416,7 +416,7 @@ img {
 }
 
 .footer p {
-  color: var(--dark-blue);
+  color: var(--white);
   font-size: 2.25em;
   text-align: center;
   flex: 1;
