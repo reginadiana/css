@@ -1,8 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
 
+:root {
+  /* Blue */
+  --light-blue: #66d9eb;
+  --blue: #2c70ff;
+  --dark-blue: #122ab2;
+
+  /* Gray */
+  --light-gray: #f7f7f7;
+  --gray: #a4a4a4;
+  --medium-gray: #7c7c7c;
+  --dark-gray: #777;
+
+  /* Others */
+  --white: #fff;
+  --black: #222;
+  --purple: #ae81ff;
+  --pink: #f9265e;
+}
+
 body {
   font-family: "Nunito", Arial, Helvetica, sans-serif;
-  color: #222;
+  color: var(--black);
 }
 
 /* Normalize */
@@ -39,8 +58,8 @@ img {
 
 /* Superinfo */
 .superinfo-bg {
-  background-color: #122ab2;
-  color: #fff;
+  background-color: var(--dark-blue);
+  color: var(--white);
 }
 
 .superinfo {
@@ -57,12 +76,12 @@ img {
 } 
 
 .superinfo a {
-  color: #fff;
+  color: var(--white);
 }
 
 /* Menu */
 .menu-bg {
-  background-color: #2c70ff;
+  background-color: var(--blue);
 }
 
 .menu {
@@ -76,7 +95,7 @@ img {
 }
 
 .menu a {
-  color: #fff;
+  color: var(--white);
 }
 
 .menu-logo a {
@@ -97,7 +116,7 @@ img {
 }
 
 .menu-nav a:hover {
-  color: #122ab2;
+  color: var(--dark-blue);
 }
 
 /* Introdução */
@@ -111,8 +130,8 @@ img {
 
 /* Sobre */
 .sobre {
-  border-top: 2px solid #2c70ff;
-  border-bottom: 2px solid #2c70ff;
+  border-top: 2px solid var(--blue);
+  border-bottom: 2px solid var(--blue);
   max-width: 960px;
   margin: 0 auto;
   padding: 60px 0;
@@ -134,7 +153,7 @@ img {
   font-size: 1.25em;
   line-height: 1.4;
   margin-bottom: 1em;
-  color: #7c7c7c;
+  color: var(--medium-gray);
 }
 
 .sobre-img {
@@ -166,26 +185,26 @@ img {
 
 .produtos-item h2 {
   font-size: 3em;
-  color: #a4a4a4;
-  background-color: #f7f7f7;
+  color: var(--gray);
+  background-color: var(--light-gray);
   padding: 60px 20px;
 }
 
 .purple {
-  border-top: 8px solid #ae81ff;
+  border-top: 8px solid var(--purple);
 }
 
 .pink {
-  border-top: 8px solid #f9265e;
+  border-top: 8px solid var(--pink);
 }
 
 .blue {
-  border-top: 8px solid #66d9eb;
+  border-top: 8px solid var(--light-blue);
 }
 
 /* Preços */
 .preco {
-  background-color: #f7f7f7;
+  background-color: var(--light-gray);
   padding: 60px;
   display: flex;
   flex-wrap: wrap;
@@ -194,14 +213,14 @@ img {
 
 .preco-item {
   flex: 1 1 260px;
-  border: 4px solid #fff;
+  border: 4px solid var(--white);
   padding: 20px;
   margin: 10px;
 }
 
 .preco-item h2 {
   font-size: 3em;
-  color: #a4a4a4;
+  color: var(--gray);
   text-align: center;
   margin-top: 20px;
 }
@@ -214,8 +233,8 @@ img {
   text-align: center;
   font-weight: bold;
   padding: 10px 0 5px;
-  border-top: 4px solid #fff;
-  border-bottom: 4px solid #fff;
+  border-top: 4px solid var(--white);
+  border-bottom: 4px solid var(--white);
 }
 
 .preco-item sup {
@@ -228,7 +247,7 @@ img {
   font-size: 1.25em;
   line-height: 1;
   font-style: italic;
-  color: #7c7c7c;
+  color: var(--medium-gray);
 }
 
 .preco-item li {
@@ -244,7 +263,7 @@ img {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #2c70ff;
+  background-color: var(--blue);
 }
 
 .preco-item a {
@@ -252,7 +271,7 @@ img {
   display: block;
   margin: 20px auto;
   border: 4px solid;
-  color: #222;
+  color: var(--black);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2.25em;
@@ -291,7 +310,7 @@ img {
 
 .qualidade-item h2 {
   font-size: 2.25em;
-  color: #a4a4a4;
+  color: var(--gray);
   margin-bottom: 20px;
 }
 
@@ -305,28 +324,28 @@ img {
 
 /* Seleciona o primeiro item a cada 3 itens */
 .qualidade-item:nth-of-type(3n + 1) h2::before {
-  background-color: #ae81ff;
+  background-color: var(--purple);
 }
 
 /* Seleciona o segundo item a cada 3 itens */
 .qualidade-item:nth-of-type(3n + 2) h2::before {
-  background-color: #f9265e;
+  background-color: var(--pink);
 }
 
 /* Seleciona o terceiro item a cada 3 itens */
 .qualidade-item:nth-of-type(3n) h2::before {
-  background-color: #66d9eb;
+  background-color: var(--light-blue);
 }
 
 .qualidade-item p {
   font-size: 1.25em;
   line-height: 1.4;
-  color: #777;
+  color: var(--dark-gray);
 }
 
 /* Newsletter */
 .newsletter {
-  background-color: #f7f7f7;
+  background-color: var(--light-gray);
   padding: 60px calc((100% - 960px) / 2);
   display: flex;
   flex-wrap: wrap;
@@ -339,14 +358,14 @@ img {
 
 .newsletter-info h1 {
   font-size: 3em;
-  color: #a4a4a4;
+  color: var(--gray);
 }
 
 .newsletter-info p {
   font-size: 1.25em;
   font-style: italic;
   max-width: 200px;
-  color: #7c7c7c;
+  color: var(--medium-gray);
   margin-bottom: 10px;
 }
 
@@ -360,9 +379,9 @@ img {
 
 .newsletter-form input {
   flex: 3 1 200px;
-  border: 4px solid #2c70ff;
+  border: 4px solid var(--blue);
   font-size: 1.25em;
-  color: #7c7c7c;
+  color: var(--medium-gray);
   font-style: italic;
   background-color: transparent;
   padding: 10px;
@@ -371,12 +390,12 @@ img {
 }
 
 .newsletter-form button {
-  background-color: #2c70ff;
+  background-color: var(--blue);
   flex: 1 1 200px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2.25em;
-  color: #fff;
+  color: var(--white);
   border: 0;
   cursor: pointer;
   padding: 15px 10px;
@@ -392,12 +411,12 @@ img {
 .footer {
   display: flex;
   height: 200px;
-  background-color: #2c70ff;
+  background-color: var(--blue);
   align-items: center;
 }
 
 .footer p {
-  color: #122ab2;
+  color: var(--dark-blue);
   font-size: 2.25em;
   text-align: center;
   flex: 1;
